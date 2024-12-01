@@ -3,11 +3,11 @@ import { AppBar, Toolbar, Tabs, Tab, Button, Drawer, ListItemButton, ListItemIco
 import MenuIcon from '@mui/icons-material/Menu';
 
 const styles1 = {
-  fontSize:'12px',marginLeft:'auto',color:'black',borderRadius:'20px',fontWeight:'bold','&.MuiButton-contained':{backgroundColor:'#0FF1F6'}
+  fontSize:'12px',marginLeft:'auto',textTransform:'capitalize',color:'black',borderRadius:'20px',fontWeight:'bold','&.MuiButton-contained':{backgroundColor:'#0FF1F6'}
 };
 
 const styles2 = {
-  fontSize:'12px',marginLeft:'10px',color:'white',borderRadius:'20px',marginRight:'15px',border:'1px white solid'
+  fontSize:'12px',marginLeft:'10px',textTransform:'capitalize',color:'white',borderRadius:'20px',marginRight:'15px',border:'1px white solid'
 };
 
 function NavbarArea() {
@@ -46,14 +46,14 @@ function NavbarArea() {
           ):(
                <>
                <Tabs sx={{marginLeft:'auto'}}
-                textColor='black'
-                indicatorColor=''
+                textColor='inherit'
+                indicatorColor='inherit'
                 value={value}
-                onChange={(value)=> setValue(value)}
+                onChange={(e,value)=> setValue(value)}
                >
                 {
                   Pages.map((page,index)=>(
-                    <Tab key={index} label={page} />
+                    <Tab key={index} label={page} sx={{textTransform:'capitalize'}} />
                   ))}
          </Tabs>
          <Button variant='contained' sx={styles1}>Book a Demo</Button>
