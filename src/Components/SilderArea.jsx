@@ -47,7 +47,7 @@ function SilderArea() {
                 <button className='hidden md:flex absolute left-0 top-10 text-gray-400 hover:text-[#0FF1F6] transition duration-300' onClick={prev}><LuArrowLeftSquare size={30} /></button>
                 <button className='hidden md:flex absolute right-0 top-10 text-gray-400 hover:text-[#0FF1F6] transition duration-300' onClick={next}><LuArrowRightSquare size={30} /></button>
             </div>
-            <div className="">
+            <div>
                 {slides.map((_, index) => (
                     <span
                         key={index}
@@ -58,8 +58,7 @@ function SilderArea() {
                             padding: "5px",
                             backgroundColor: currentIndex === index ? "#0FF1F6" : "gray",
                             borderRadius: "50%",
-                        }}
-                    />
+                    }}/>
                 ))}
             </div>
         </div>

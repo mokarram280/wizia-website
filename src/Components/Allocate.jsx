@@ -22,7 +22,7 @@ function Allocate() {
             <h3 className='text-2xl lg:text-3xl text-[#0FF1F6] italic'>Let us handle the rest.</h3>
             <p className='text-gray-400 text-base md:text-md max-w-md'>Keep your reps “in the air” -- out in the field and on the phone where they can build relationships.</p>
         </div>
-        <div className='flex flex-col md:flex-row items-start px-10 md:px-20 max-w-xl'>
+        <div className='flex flex-col md:flex-row items-start pb-8 px-10 md:px-20 max-w-xl'>
             {
                 lists.map((item,i)=>(
                     <div key={i}>
