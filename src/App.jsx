@@ -2,6 +2,7 @@ import './App.css';
 import Allocate from './Components/Allocate';
 import Control from './Components/Control';
 import Embrace from './Components/Embrace';
+import Footer from './Components/Footer';
 import Hero from './Components/Hero';
 import NavbarArea from './Components/NavbarArea';
 import PreferedEmail from './Components/PreferedEmail';
@@ -20,6 +21,7 @@ function App() {
       <SilderArea />
       <Allocate />
       <Embrace />
+      <Footer />
     </>
   )
 }
