@@ -31,7 +31,9 @@ function SilderArea() {
             setCurrentIndex((index)=> (index === Sliders.length - 1 ? 0 : index + 1));
         }
 
+    const slides = ["Slide 1", "Slide 2", "Slide 3"];
     const {text,names,position} = Sliders[currentIndex];
+
   return (
     <section className='py-16 px-12'>
         <div className='flex items-center justify-center mb-12'>
@@ -42,11 +44,23 @@ function SilderArea() {
             <h4 className='text-[#0FF1F6] text-lg md:text-2xl font-bold'>{names}</h4>
             <p className='text-gray-400 md:text-md'>{position}</p>
             <div className=''>
-                <button className='absolute left-0 top-10 text-gray-400 hover:text-[#0FF1F6] transition duration-300' onClick={prev}><LuArrowLeftSquare size={30} /></button>
-                <button className='absolute right-0 top-10 text-gray-400 hover:text-[#0FF1F6] transition duration-300' onClick={next}><LuArrowRightSquare size={30} /></button>
+                <button className='hidden md:flex absolute left-0 top-10 text-gray-400 hover:text-[#0FF1F6] transition duration-300' onClick={prev}><LuArrowLeftSquare size={30} /></button>
+                <button className='hidden md:flex absolute right-0 top-10 text-gray-400 hover:text-[#0FF1F6] transition duration-300' onClick={next}><LuArrowRightSquare size={30} /></button>
             </div>
-            <div>
-
+            <div className="">
+                {slides.map((_, index) => (
+                    <span
+                        key={index}
+                        onClick={() => goToSlide(index)}
+                        style={{
+                            cursor: "pointer",
+                            margin: "0 5px",
+                            padding: "5px",
+                            backgroundColor: currentIndex === index ? "#0FF1F6" : "gray",
+                            borderRadius: "50%",
+                        }}
+                    />
+                ))}
             </div>
         </div>
     </section>

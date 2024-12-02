@@ -1,4 +1,5 @@
 import './App.css';
+import Allocate from './Components/Allocate';
 import Control from './Components/Control';
 import Hero from './Components/Hero';
 import NavbarArea from './Components/NavbarArea';
@@ -16,6 +17,7 @@ function App() {
       <Control />
       <PreferedEmail />
       <SilderArea />
+      <Allocate />
     </>
   )
 }
