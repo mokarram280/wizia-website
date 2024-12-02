@@ -3,6 +3,7 @@ import Control from './Components/Control';
 import Hero from './Components/Hero';
 import NavbarArea from './Components/NavbarArea';
 import PreferedEmail from './Components/PreferedEmail';
+import SilderArea from './Components/SilderArea';
 import Trusted from './Components/Trusted';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Trusted />
       <Control />
       <PreferedEmail />
+      <SilderArea />
     </>
   )
 }
