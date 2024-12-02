@@ -4,7 +4,7 @@ function Control() {
     const Lists = [
         {
             img:'ph_magic-wand-duotone.svg',
-            title:'You &apos; re in Control',
+            title:"You're in Control",
             description:'aiDRs operate based on your rules. You guide the machine, the aiDRs execute the work.'
         },
         {
