@@ -23,6 +23,8 @@ function SilderArea() {
         }
     ];
 
+    const slides = ["Slide1 ", "Slide 2", "Slide 3"];
+
         const [currentIndex, setCurrentIndex] = useState(0);
         const prev = ()=>{
             setCurrentIndex((index)=> (index === 0 ? Sliders.length - 1 : index -1 ));
@@ -31,7 +33,6 @@ function SilderArea() {
             setCurrentIndex((index)=> (index === Sliders.length - 1 ? 0 : index + 1));
         }
 
-    const slides = ["Slide 1", "Slide 2", "Slide 3"];
     const {text,names,position} = Sliders[currentIndex];
 
   return (
@@ -41,11 +42,11 @@ function SilderArea() {
         </div>
         <div className='text-center space-y-4 relative'>
             <h3 className='text-2xl md:text-3xl lg:text-3xl text-white max-w-4xl mx-auto'>{text}</h3>
-            <h4 className='text-[#0FF1F6] text-lg md:text-2xl font-bold'>{names}</h4>
+            <h4 className='text-primary text-xl md:text-2xl font-bold'>{names}</h4>
             <p className='text-gray-400 md:text-md'>{position}</p>
-            <div className=''>
-                <button className='hidden md:flex absolute left-0 top-10 text-gray-400 hover:text-[#0FF1F6] transition duration-300' onClick={prev}><LuArrowLeftSquare size={30} /></button>
-                <button className='hidden md:flex absolute right-0 top-10 text-gray-400 hover:text-[#0FF1F6] transition duration-300' onClick={next}><LuArrowRightSquare size={30} /></button>
+            <div>
+                <button className='hidden md:flex absolute left-10 top-10 text-gray-400 hover:text-primary transition duration-300' onClick={prev}><LuArrowLeftSquare size={30} /></button>
+                <button className='hidden md:flex absolute right-10 top-10 text-gray-400 hover:text-primary transition duration-300' onClick={next}><LuArrowRightSquare size={30} /></button>
             </div>
             <div>
                 {slides.map((_, index) => (

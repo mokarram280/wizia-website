@@ -15,7 +15,7 @@ function PreferedEmail() {
             <h4 className='text-[#0FF1F6] text-xl md:text-2xl lg:text-3xl italic'>prefered email st/</h4>
             <p className='text-gray-400 text-md max-w-72'>You&apos;re in control. Train your aiDR on elements of your Marketing strategy.</p>
         </div>
-        <div className='grid grid-cols-1 md:grid-cols-2 ms-20 mt-10 space-y-3 text-[#0FF1F6]'>
+        <div className='grid grid-cols-1 md:grid-cols-2 ms-0 md:ms-20 mt-10 space-y-3 text-primary'>
                 {
                     Info.map((all,i)=>(
                         <div key={i} className='flex items-center gap-2'>

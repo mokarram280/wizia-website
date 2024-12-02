@@ -10,8 +10,8 @@ const Companies = [
 
 function Trusted() {
   return (
-    <section className='bg-[#07292F] py-6 space-y-6'>
-        <h4 className='text-xl md:text-2xl text-[#0FF1F6] text-center uppercase'>our trusted partners</h4>
+    <section className='bg-secondary py-6 space-y-6'>
+        <h4 className='text-xl md:text-2xl text-primary text-center uppercase'>our trusted partners</h4>
         <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5'>
             {
                 Companies.map((item,i)=>(
