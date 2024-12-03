@@ -26,7 +26,7 @@ function Allocate() {
             {
                 lists.map((item,i)=>(
                     <div key={i}>
-                        <h2 className='text-2xl md:text-3xl lg:text-4xl text-primary font-bold'>{item.rate}</h2>
+                        <h2 className='text-2xl md:text-3xl lg:text-4xl text-primary font-bold animate-pulse'>{item.rate}</h2>
                         <p className='text-gray-300 max-w-48'>{item.improv}</p>
                     </div>
                 ))

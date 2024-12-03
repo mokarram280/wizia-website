@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { LuArrowRightSquare,LuArrowLeftSquare } from "react-icons/lu";
+import { IoMdArrowRoundForward,IoMdArrowRoundBack } from "react-icons/io";
 
 function SilderArea() {
     const Sliders =[
@@ -37,7 +37,7 @@ function SilderArea() {
 
   return (
     <section className='py-16 px-12'>
-        <div className='flex items-center justify-center mb-12'>
+        <div className='flex items-center justify-center mb-12 animate-pulse'>
            <img className='w-16' src="Group 9.svg" alt="" />
         </div>
         <div className='text-center space-y-4 relative'>
@@ -45,8 +45,8 @@ function SilderArea() {
             <h4 className='text-primary text-xl md:text-2xl font-bold'>{names}</h4>
             <p className='text-gray-400 md:text-md'>{position}</p>
             <div>
-                <button className='hidden md:flex absolute left-10 top-10 text-gray-400 hover:text-primary transition duration-300' onClick={prev}><LuArrowLeftSquare size={30} /></button>
-                <button className='hidden md:flex absolute right-10 top-10 text-gray-400 hover:text-primary transition duration-300' onClick={next}><LuArrowRightSquare size={30} /></button>
+                <button className='hidden md:flex absolute left-10 top-10 bg-[#96ACAF33] p-1 rounded-lg text-gray-400 hover:text-primary transition duration-300' onClick={prev}><IoMdArrowRoundBack size={25} /></button>
+                <button className='hidden md:flex absolute right-10 top-10 bg-[#96ACAF33] p-1 rounded-lg text-gray-400 hover:text-primary transition duration-300' onClick={next}><IoMdArrowRoundForward size={25} /></button>
             </div>
             <div className='flex justify-center gap-3'>
                   {slides.map((_, index) => (
