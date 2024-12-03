@@ -19,11 +19,11 @@ function Control() {
         },
     ];
   return (
-    <section className='py-6 md:py-16 px-6 md:px-12'>
+    <section className='py-6 md:py-16 px-6 md:px-12 mt-12'>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
             {
                 Lists.map((items,i)=>(
-                    <div key={i} className='space-y-3'>
+                    <div key={i} className='space-y-3 flex flex-col mx-auto'>
                         <img className='w-8 md:w-10 animate-bounce' src={items.img} alt="" />
                         <h3 className='text-lg md:text-2xl font-semibold text-white'>{items.title}</h3>
                         <p className='text-md md:text-lg text-gray-400 md:max-w-72'>{items.description}</p>

@@ -19,9 +19,9 @@ function NavbarArea() {
   const PAGE = ['About Us','Pricing','Customers','Solutions','Book a Demo','Contact Us'];
   return (
     <>
-      <AppBar position='static' elevation={0} sx={{backgroundColor:'#002228'}}>
+      <AppBar position='static' elevation={0} sx={{backgroundColor:'#002228',maxWidth:'1200px',margin:'0 auto'}}>
         <Toolbar sx={{color:'white'}}>
-         <Typography sx={{marginLeft:'10px'}}>
+         <Typography>
               <img src="/Logo.svg" alt="" />
             </Typography>
          {
