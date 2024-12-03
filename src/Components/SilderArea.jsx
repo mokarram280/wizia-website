@@ -48,20 +48,15 @@ function SilderArea() {
                 <button className='hidden md:flex absolute left-10 top-10 text-gray-400 hover:text-primary transition duration-300' onClick={prev}><LuArrowLeftSquare size={30} /></button>
                 <button className='hidden md:flex absolute right-10 top-10 text-gray-400 hover:text-primary transition duration-300' onClick={next}><LuArrowRightSquare size={30} /></button>
             </div>
-            <div>
-                {slides.map((_, index) => (
-                    <span
-                        key={index}
-                        onClick={() => goToSlide(index)}
-                        style={{
-                            cursor: "pointer",
-                            margin: "0 5px",
-                            padding: "5px",
-                            backgroundColor: currentIndex === index ? "#0FF1F6" : "gray",
-                            borderRadius: "50%",
-                    }}/>
-                ))}
-            </div>
+            <div className='flex justify-center gap-3'>
+                  {slides.map((_, index) => (
+                     <button
+                         key={index}
+                         onClick={() => handleDotClick(index)}
+                         className={`w-3 h-3 rounded-full ${index === currentIndex ? "bg-primary" : "bg-slate-800"}`} >
+                     </button>
+                    ))}
+            </div>;
         </div>
     </section>
   )
