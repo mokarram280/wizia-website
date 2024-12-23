@@ -9,7 +9,7 @@ function PreferedEmail() {
         {line:'Works with all your existing tools'},
     ]
   return (
-    <section className='bg-[url(BG.svg)] bg-no-repeat bg-cover flex flex-col items-center justify-center py-8 md:py-16 mx-8 md:mx-12 rounded-2xl mt-12 md:mt-0'>
+    <section className='bg-[url(/BG.svg)] bg-no-repeat bg-cover flex flex-col items-center justify-center py-8 md:py-16 mx-8 md:mx-12 rounded-2xl mt-12 md:mt-0'>
         <div className='text-center md:text-start space-y-3'>
             <h3 className='text-2xl md:text-3xl lg:text-4xl text-white font-bold'>Train your aiDR on your...</h3>
             <h4 className='text-[#0FF1F6] text-xl md:text-2xl lg:text-3xl italic'>prefered email st/</h4>

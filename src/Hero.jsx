@@ -8,7 +8,7 @@ const BtnStyle = {
 
 function Hero() {
   return (
-    <section className='bg-[url(Img.png)] bg-no-repeat bg-cover'>
+    <section className='bg-[url(/Img.png)] bg-no-repeat bg-cover'>
         <div className='flex flex-col md:items-start items-center justify-center py-8 md:py-16 px-10 md:px-20 space-y-6 w-full text-center md:text-left'>
             <h5 className='text-primary text-lg md:text-xl lg:text-2xl'>AI SDRs (aiDRs)</h5>
             <h1 className='text-5xl md:text-6xl lg:text-6xl font-bold text-white max-w-80 md:max-w-96'>More <span className='font-normal italic'>leads,</span> less <span className='font-normal italic'>people.</span></h1>

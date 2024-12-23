@@ -16,7 +16,7 @@ function Allocate() {
         }
     ];
   return (
-    <section className='bg-[url(BG1.svg)] bg-no-repeat bg-cover mx-8 md:mx-16 rounded-2xl'>
+    <section className='bg-[url(/BG1.svg)] bg-no-repeat bg-cover mx-8 md:mx-16 rounded-2xl'>
         <div className='flex flex-col md:items-start items-center justify-center py-8 md:py-16 px-10 md:px-20 space-y-3 w-full text-center md:text-left'>
             <h2 className='text-2xl lg:text-3xl text-white font-semibold max-w-md'>Allocate effort where your reps make an inpact.</h2>
             <h3 className='text-2xl lg:text-3xl text-primary italic'>Let us handle the rest.</h3>

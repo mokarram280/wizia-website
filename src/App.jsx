@@ -1,13 +1,14 @@
 import './App.css';
-import Allocate from './Components/Allocate';
+import Allocate from './Allocate';
 import Control from './Components/Control';
-import Embrace from './Components/Embrace';
-import Footer from './Components/Footer';
-import Hero from './Components/Hero';
-import NavbarArea from './Components/NavbarArea';
-import PreferedEmail from './Components/PreferedEmail';
-import SilderArea from './Components/SilderArea';
-import Trusted from './Components/Trusted';
+import Embrace from './Embrace';
+import Footer from './Footer';
+import Hero from './Hero';
+import NavbarArea from './NavbarArea';
+import PreferedEmail from './PreferedEmail';
+import SilderArea from './SilderArea';
+import Trusted from './Trusted';
+
 
 function App() {
 
